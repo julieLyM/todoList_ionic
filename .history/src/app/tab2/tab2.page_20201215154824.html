@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Questions
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Questions</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-item>
+    <ion-input 
+      placeholder="ici une question"
+      type="text"
+      [(ngModel)]="valueInputTab2">
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-select 
+      [(ngModel)]="colorInput" 
+      placeholder="Choose your color"
+    >
+      <ion-select-option value="primary">Blue</ion-select-option>
+      <ion-select-option value="danger">Red</ion-select-option>
+      <ion-select-option value="dark">Noir</ion-select-option>
+      <ion-select-option value="danger">Red</ion-select-option>
+      <ion-select-option value="danger">Red</ion-select-option>
+    </ion-select>
+  </ion-item>
+  
+  <ion-button (click)="onSavingQuestion">valider</ion-button>
+
+
+
+
+  <!-- <app-explore-container name="Tab 2 page"></app-explore-container> -->
+</ion-content>

@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      List App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">List App</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-item>
+    <ion-input 
+      placeholder="Ici une todo"
+      [(ngModel)]='valueInput'
+    ></ion-input>
+  </ion-item>
+  <ion-button (click)="onSavingTodo()">Ajouter</ion-button>
+  <ul>
+    <li *ngfor="let item of newTodo">
+
+  </li></ul>
+  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
+</ion-content>
