@@ -13,30 +13,14 @@
     </ion-toolbar>
   </ion-header>
 
-    <ion-item>
-        <ion-input 
+  <ion-item>
+    <ion-list>
+      <ion-item>
           [(ngModel)]="valueIdea"
           placeholder="ici les idees"></ion-input>
         <ion-button (click)="onClickIdea()">valider</ion-button>
-    </ion-item>
-
-    <ion-list >
-      <ion-item-sliding *ngFor="let item of ideaList;index as index">
-      <ion-card>
-        <ion-item class="ion-activated">
-          <ion-icon name="reader-outline"></ion-icon>        
-          {{item.title}}
-        </ion-item>
-      </ion-card>
-        <ion-item-options side="end">
-          <ion-item-option color="danger" (click)="eraseTodo(item)">
-            effacer
-          </ion-item-option>
-        </ion-item-options>
-
-      </ion-item-sliding>
-
     </ion-list>
+  </ion-item>
 
   <!-- <app-explore-container name="Tab 3 page"></app-explore-container> -->
 </ion-content>

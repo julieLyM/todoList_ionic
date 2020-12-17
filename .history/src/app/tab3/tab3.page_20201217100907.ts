@@ -21,6 +21,5 @@ export class Tab3Page {
     let addIdea = new ideas();
     addIdea.title = this.valueIdea;
     this.ideaList.push(addIdea);
-    console.log(this.ideaList);
   }
 }

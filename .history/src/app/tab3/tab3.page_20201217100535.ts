@@ -14,13 +14,9 @@ export class Tab3Page {
 
   valueIdea = '';
 
-  ideaList: ideas[] = [];
+  ideaList = ided
 
   onClickIdea() {
     console.log('test');
-    let addIdea = new ideas();
-    addIdea.title = this.valueIdea;
-    this.ideaList.push(addIdea);
-    console.log(this.ideaList);
   }
 }

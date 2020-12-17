@@ -23,9 +23,10 @@
     <ion-list >
       <ion-item-sliding *ngFor="let item of ideaList;index as index">
       <ion-card>
-        <ion-item class="ion-activated">
-          <ion-icon name="reader-outline"></ion-icon>        
-          {{item.title}}
+        <ion-item href="#" class="ion-activated">
+          <ion-icon name="wifi" slot="start"></ion-icon>
+          <ion-label>{{item.title}}
+          </ion-label>
         </ion-item>
       </ion-card>
         <ion-item-options side="end">

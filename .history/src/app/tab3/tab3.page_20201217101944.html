@@ -21,13 +21,14 @@
     </ion-item>
 
     <ion-list >
-      <ion-item-sliding *ngFor="let item of ideaList;index as index">
-      <ion-card>
-        <ion-item class="ion-activated">
-          <ion-icon name="reader-outline"></ion-icon>        
-          {{item.title}}
+      <ion-item-sliding *ngFor="let item of todoList;index as index">
+        <ion-item >
+          <ion-label>
+          <!-- {{index}} -  -->
+          {{item.titre}}
+          </ion-label>
         </ion-item>
-      </ion-card>
+
         <ion-item-options side="end">
           <ion-item-option color="danger" (click)="eraseTodo(item)">
             effacer
@@ -35,7 +36,6 @@
         </ion-item-options>
 
       </ion-item-sliding>
-
     </ion-list>
 
   <!-- <app-explore-container name="Tab 3 page"></app-explore-container> -->

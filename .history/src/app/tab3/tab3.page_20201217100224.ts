@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
 
-class ideas {
-  title: string;
-  ideas: string;
-}
+
+class ideas
 @Component({
   selector: 'app-tab3',
   templateUrl: 'tab3.page.html',
@@ -12,15 +10,7 @@ class ideas {
 export class Tab3Page {
   constructor() {}
 
-  valueIdea = '';
-
-  ideaList: ideas[] = [];
-
   onClickIdea() {
     console.log('test');
-    let addIdea = new ideas();
-    addIdea.title = this.valueIdea;
-    this.ideaList.push(addIdea);
-    console.log(this.ideaList);
   }
 }

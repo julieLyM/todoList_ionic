@@ -20,7 +20,7 @@ export class Tab3Page {
     console.log('test');
     let addIdea = new ideas();
     addIdea.title = this.valueIdea;
+    console.log(addIdea);
     this.ideaList.push(addIdea);
-    console.log(this.ideaList);
   }
 }
